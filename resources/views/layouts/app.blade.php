@@ -12,10 +12,11 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     @stack('styles')
 
     <!-- Scripts -->
-    @stack('scripts')
+
     @vite('resources/sass/app.scss')
 </head>
 <body>
@@ -80,5 +81,6 @@
         </main>
     </div>
     @vite('resources/js/app.js')
+    @stack('scripts')
 </body>
 </html>
